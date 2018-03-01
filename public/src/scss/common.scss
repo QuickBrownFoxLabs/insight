@@ -62,6 +62,28 @@ a {
   }
 }
 
+a.quantum-protected {
+  color: $quantum-protected;
+  &:hover {
+    color: $quantum-protected;
+  }
+}
+
+a.tx-quantum-protected {
+  color: $tx-quantum-protected;
+  &:hover {
+    color: $tx-quantum-protected;
+  }
+}
+
+.qp-lock {
+  color: $quantum-protected;
+}
+
+// .tx-qp-lock {
+//   color: 
+// }
+
 /* Styling for the ngProgress itself */
 #ngProgress {
   background-color: $link-blue !important;
@@ -85,7 +107,7 @@ a {
   position: fixed;
   margin: 0;
   padding: 0;
-  top: 79px;
+  top: 64px;
   left: 0;
   right: 0;
   z-index: 99999;
@@ -163,7 +185,7 @@ thead {
 // STYLES FOR NAVBAR
 
 .navbar { 
-  min-height: 80px; 
+  min-height: 60px; 
   &-default {
     background-color: #000;
     margin: 0;
@@ -186,9 +208,9 @@ thead {
       &>li>a {
         color: #FFF;
         font-family: 'Lato', sans-serif;
-        padding: 30px 30px;
+        padding: 23px 30px;
         &.nav-buttons {
-          font-size: 26px;                
+          font-size: 22px;                
         }
         &:hover {
           background-color: $link-blue;
@@ -213,7 +235,7 @@ thead {
     .status {
       padding: 7px 15px;
       background-color: #181818;
-      margin-top: 24px;
+      margin-top: 17px;
       color: #CECED2;
       height: 33px;
       border-radius: 5px;
@@ -266,7 +288,7 @@ thead {
 }
 
 .navbar-form {
-  margin-top: 23.5px;
+  margin-top: 17px;
   width: 34%;
   padding: 0;
   padding-left: 15px;
@@ -998,7 +1020,7 @@ a.v_highlight_more {
   text-align: center;
   z-index: 1000;
   margin: 0 auto;
-  margin-top: 16px;
+  margin-top: 2px;
   padding: 10px;
   -moz-box-shadow:    0px 1px 4px 0px rgba(0,0,0,0.20);
   -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.20);
@@ -1036,141 +1058,12 @@ a.v_highlight_more {
   margin-top: 15px;
 }
 
-@media (max-width: 991px) {
-  .status {
-    display: none;
-  } 
-  .navbar-form {
-    width: auto;
-  }
-  .btn-copy {
-    display: none;
-  }
-  .col-gray-fixed {
-    position:static;
-    width: 100%;
-    margin-top: 0;
-    padding: 0;
-  }
-  .m50v {
-    margin: 15px 0; 
-  }
-  .block-id span {
-    font-size: 24px;
-    margin: 10px 0;
-  }
-  .icon-block {
-    font-size: initial;
-    margin: 10px 0;
-  }
-  body {
-    font-size: 12px;
-  }
-  h1 {
-    font-size: 26px;
-    margin-top: 0;
-  }
-  h2 {
-    font-size: 22px;
-  }
-  h3 {
-    font-size: 18px;
-  }
-  .insight {
-    font-size: 30px;
-  }
-  .navbar-default .navbar-nav>li>a {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-
-@media (max-width: 767px) {
-  .navbar-form {
-    width: auto;
-  }
-  .status {
-    display: none;
-  } 
-  #wrap>.container {
-    padding: 50px 15px 0;
-  }
-  #ngProgress-container {
-    top: 50px;
-  }
-  body {
-    font-size: 11px;
-  }
-  h1 {
-    font-size: 24px;
-  }
-  h2 {
-    font-size: 20px;
-  }
-  .navbar-default .navbar-brand {
-    padding: 15px;
-  }
-  .insight {
-    font-size: 26px;
-  }
-  .navbar-nav>li>a {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-  .container {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-  .navbar-default .navbar-toggle {
-    margin-top: 7px;
-  }
-  .navbar {
-    min-height: 80px;
-  }
-  #search { color: #000; }
-  .txvalues {    
-    margin: 26px 10px 0 0;
-    color: #fff;
-    width: 162px;
-    padding: 15px 0;
-    text-align: center;
-    display: inline-block;
-    font-weight: 700;
-    font-size: 1.3rem;
-    border-collapse: separate;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu>li>a {
-    color: #fff;
-  }
-  .txvalues-success {
-    color: $success;
-  }
-  .txvalues-primary {
-    color: #2970ff;
-  }
-  .txvalues-default {
-    color: #A09E9E;
-  }
-  .txvalues-danger {
-    color: #AC0015;
-  }
-}
 .dropdown-menu .btn {
   padding: 0;
   margin: 0;
   width: 100%;
 }
-@media (min-width: 1200px) {
-  .blockAgeTable{
-    width: 140px;
-  }
-  .wider{
-    width: 488px;
-  }
-  .col-gray-fixed {
-    width: 280px;
-  }
-  .navbar-form .form-control {
-    width: 350px;
-  }
+
+.qp-purp-lock {
+  margin-right: 5px;
 }
